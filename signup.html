@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css” />
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css” integrity=”sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T” crossorigin=”anonymous”>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <style>
+        form i {
+            margin-left: -30px;
+            cursor: pointer;
+        }
+        
+        .fa {
+            width: 25px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left: 50px;">
+                <img src="media/fittr-icon.png" alt="Avatar Logo" style="width:160px; height: 30px;" class="rounded-0">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="mynavbar" style="font-size: larger;">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="padding-left: 50px;">
+                        <a class="nav-link" href="javascript:void(0)">Coaching</a>
+                    </li>
+                    <li class="nav-item" style="padding-left: 60px;">
+                        <a class="nav-link" href="javascript:void(0)">Explore</a>
+                    </li>
+                    <li class="nav-item" style="padding-left: 60px;">
+                        <a class="nav-link" href="javascript:void(0)">Corporate</a>
+                    </li>
+                    <li class="nav-item" style="padding-left: 60px;">
+                        <a class="nav-link" href="javascript:void(0)">Become a Coach</a>
+                    </li>
+                    <li class="nav-item" style="padding-left: 60px;">
+                        <a class="nav-link" href="javascript:void(0)">Transformation Challenge</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
+                    <button class="btn btn-outline-primary" type="button" style="width: 100px;">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row" style="margin-top: 90px; margin-left: 50px;">
+        <div class="col-sm-4">
+            <h2 style="margin-top:10px; font-size: x-large;">
+                Let's start your Fittr journey
+            </h2>
+            <h3>
+                <b>SIGN UP</b>
+            </h3>
+            <form action="/action_page.php">
+                <div class="mb-3 mt-4">
+                    <label for="fullname" class="col-form-label-lg">Full Name</label>
+                    <input type="name" class="form-control" id="name" name="name">
+                    <label for="email" class="col-form-label-lg">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3 mt-4">
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="concode" class="col-form-label-lg">Country Code</label><br>
+                            <select class="form-select">
+                                <option>+ 91</option>
+                                <option>+ 92</option>
+                                <option>+ 03</option>
+                                <option>+ 81</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <label for="mobnumber" class="col-form-label-lg">Mobile number</label><br>
+                            <input type="mobnumber" class="form-control" id="mob" placeholder="" name="mob"><br>
+                        </div>
+
+                    </div>
+                    <label for="pwd" class="col-form-label-lg">Password</label><br>
+                    <input type="password" class="form-control" id="pwd" placeholder="" name="pswd"><br>
+                    <label for="conpwd" class="col-form-label-lg">Confirm Password</label><br>
+                    <input type="password" class="form-control" id="conpwd" placeholder="" name="conpswd"><br>
+                    <div class="col-lg-12"> <input type="checkbox"> I have read and agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div><br>
+                <button type="submit" class="btn btn-primary" style="width: 100px;">Sign Up</button><br><br>
+                <p>Already have an account? <a href="login.html" style="text-decoration: none;">Sign in</a> </p>
+                <!-- <div class="row" style="margin-left: 5px;">
+                    <div class="col-5" style="border: 10px;">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i>facebook
+                        </a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-google fa-fw"></i> Google
+                        </a>
+                    </div>
+                </div> -->
+            </form>
+        </div>
+        <div class="col-sm-6" style="margin-left: 150px;">
+            <img class="card-img-top" src="media/login.svg" alt="Card image">
+        </div>
+    </div>
+
+    <footer class="mt-5 p-4 bg-dark text-white text-center">
+        <div class="row">
+            <div class="col-3" style="text-align: left;">
+                <h4>Contact us</h4><br>
+                <a href="#" class="fa fa-phone-square" style="text-decoration: none; color: darkgray;"></a><a href="#" style="text-decoration: none; color: darkgrey;"> 020-71968000</a><br>
+                <a href="#" class="fa fa-envelope-square" style="text-decoration: none; color: darkgray;"></a><a href="#" style="text-decoration: none; color: darkgrey;"> Get in touch</a><br><br>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="fa fa-facebook-square" style="text-decoration: none; color: darkgray;"></a>
+                        <a href="#" class="fa fa-youtube-play" style="text-decoration: none; color: darkgray;"></a>
+                        <a href="#" class="fa fa-twitter-square" style="text-decoration: none; color: darkgray;"></a>
+                        <a href="#" class="fa fa-instagram" style="text-decoration: none; color: darkgray;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" style="text-align: left;">
+                <h4>Company</h4><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">About us</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Become a Coach</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Careers</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Help & Support</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Contact us</a><br>
+            </div>
+            <div class="col" style="text-align: left;">
+                <h4>Services</h4><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Online Coaching</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Corporate Wellness</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Fitness & Nutrition</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Courses</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Charity</a><br>
+            </div>
+            <div class="col" style="text-align: left;">
+                <h4>Explore</h4><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Fitness Articles</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Healthy Recipes</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Exercise videos</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Nutrition-facts</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Transformations</a><br>
+            </div>
+            <div class="col" style="text-align: left;">
+                <h4>Tools</h4><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">BMR Calculator</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Macro Calculator</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">Body Fat Calculator</a><br>
+                <a href="#" style="text-decoration: none;color: darkgray;">1RM Calculator</a><br>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
